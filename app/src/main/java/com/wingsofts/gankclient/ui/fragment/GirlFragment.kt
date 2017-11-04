@@ -65,7 +65,8 @@ class GirlFragment : BaseBingingFragment<ViewRecyclerBinding>(), FuckGoodsContra
         mAdapter.setOnItemClickListener {
             pos->
 
-            val imageView = recyclerView.findViewHolderForAdapterPosition(pos)?.itemView?.findViewById(R.id.iv_girl) as ImageView
+            val imageView = recyclerView.findViewHolderForAdapterPosition(pos)
+                    ?.itemView?.findViewById<ImageView>(R.id.iv_girl) as ImageView
 
             ImageActivity.startActivity(context,imageView,mList[pos].url)
         }

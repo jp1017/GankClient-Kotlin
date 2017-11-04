@@ -1,7 +1,5 @@
 package com.wingsofts.gankclient.bean
 
-import java.util.*
-
 /**
  * Created by wing on 11/23/16.
  */
